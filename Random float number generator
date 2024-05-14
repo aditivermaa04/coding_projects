@@ -1,0 +1,23 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+float randomFloat()
+{
+	return (float)(rand()) / (float)(rand());
+}
+
+signed main()
+{
+	// seeds the generator
+	srand(time(0));
+
+	for (int i = 0; i < 5; i++) {
+		// generate different sequence of random float
+		// numbers
+		cout << randomFloat() << endl;
+	}
+
+	return 0;
+}
+
